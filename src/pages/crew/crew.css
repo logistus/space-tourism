@@ -1,0 +1,155 @@
+.crew__image {
+  height: 222px;
+  margin: auto;
+
+}
+
+.crew {
+  width: 95%;
+  margin: 2rem auto;
+}
+
+.crew__wrapper {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+}
+
+.crew__image__wrapper {
+  border-bottom: 1px solid #383B4B;
+  margin: auto;
+  width: 90%;
+
+}
+
+.crew__role {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 49.51%);
+  margin-bottom: .5rem;
+}
+
+.crew__name {
+  font-size: 24px;
+  color: #FFF;
+  margin-bottom: 1rem;
+}
+
+.crew__menu {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto;
+}
+
+.crew__menu__item {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 17.44%);
+}
+
+.crew__menu>.crew__menu__item.active {
+  background-color: #FFF;
+}
+
+@media (min-width: 768px) {
+  .crew__role {
+    order: 1;
+    font-size: 24px;
+  }
+
+  .crew__name {
+    order: 2;
+    font-size: 40px;
+  }
+
+  .crew__bio {
+    order: 3;
+    width: 65%;
+    margin: auto;
+  }
+
+  .crew__menu {
+    order: 4;
+  }
+
+  .crew__image__wrapper {
+    order: 2;
+    border-bottom: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .crew__image {
+    height: 572px;
+    display: block;
+  }
+
+  .crew__info__wrapper {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1440px) {
+  .crew__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+
+  .crew__image__wrapper {
+    position: relative;
+    margin-top: 0;
+  }
+
+  .crew__image {
+    height: 712px;
+  }
+
+  .crew__bio {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .crew__menu {
+    margin-left: 0;
+  }
+
+  .crew__role,
+  .crew__name {
+    text-align: left;
+  }
+
+  .crew__role {
+    font-size: 2rem;
+  }
+
+  .crew__name {
+    font-size: 56px;
+  }
+
+  .crew__info__wrapper {
+    margin-top: 5rem;
+    max-width: 80%;
+  }
+
+  .crew__menu__item {
+    width: 15px;
+    height: 15px;
+  }
+
+  .crew__menu__item:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 50%);
+  }
+}

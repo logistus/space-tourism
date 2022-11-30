@@ -1,0 +1,135 @@
+.planet__image {
+  width: 170px;
+  height: 170px;
+  margin: 2rem auto;
+  z-index: -1;
+}
+
+.planets__menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+
+.planets__menu__item {
+  padding-bottom: .5rem;
+}
+
+.planets__menu__item a {
+  margin-right: -2.7px;
+}
+
+.planets__menu>.planets__menu__item.active {
+  color: #fff;
+  border-bottom: 3px solid #FFF;
+}
+
+.planet {
+  margin-bottom: 2rem;
+}
+
+.planet__name {
+  margin: 1.5rem auto .5rem auto;
+}
+
+.planet__desc {
+  margin-bottom: 2rem;
+}
+
+.planet__infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.planet__info {
+  margin-top: 2rem;
+}
+
+.planet__info__title {
+  margin-bottom: 1rem;
+  padding-left: 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .planet__image {
+    width: 300px;
+    height: 300px;
+    margin: 4rem auto;
+  }
+
+  .planets__menu {
+    width: 285px;
+  }
+
+  .planet__desc {
+    margin-bottom: 3rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 573px !important;
+  }
+
+  .planet__infos {
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .planet__wrapper {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    gap: 6rem;
+  }
+
+  .planet__image {
+    margin: 0 !important;
+    width: 445px !important;
+    height: 445px !important;
+  }
+
+  .planet__texts {
+    width: 445px;
+  }
+
+  .planets__menu,
+  .planet__name,
+  .planet__desc {
+    margin-left: 0 !important;
+    text-align: left;
+  }
+
+  .planets__menu>.planets__menu__item:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 50%);
+  }
+
+  .planet__name {
+    font-size: 100px;
+  }
+
+  .planet__desc {
+    padding: 0 !important;
+    width: 445px !important;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .planet__info__title,
+  .subhead__medium {
+    text-align: left;
+  }
+
+  .planet__infos {
+    justify-content: flex-start;
+    margin-left: 0;
+    gap: 4rem;
+    width: 100%;
+  }
+}

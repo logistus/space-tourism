@@ -1,0 +1,169 @@
+.container {
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  padding-right: 24px;
+}
+
+.menu {
+  display: none;
+}
+
+.mobile-menu-container {
+  width: 68%;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  backdrop-filter: blur(81.55px);
+  background: rgba(255, 255, 255, 4%);
+  color: #FFFFFF;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 2.7px;
+}
+
+.mobile-menu {
+  position: absolute;
+  width: 90%;
+  top: 25%;
+  left: 10%;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-menu a {
+  flex: 1;
+}
+
+.mobile-menu a.active {
+  border-right: 4px solid #FFFFFF;
+}
+
+.menu-item {
+  line-height: 31px;
+  display: flex;
+}
+
+.menu-item-order {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.mobile-menu-close-button {
+  position: absolute;
+  right: 35px;
+  top: 35px;
+}
+
+.mobile-menu {
+  list-style: none;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin: 24px;
+}
+
+.menu__line {
+  display: none;
+}
+
+.menu__order {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header {
+    margin-bottom: 2rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    color: #FFFFFF;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 4%);
+    backdrop-filter: blur(81.55px);
+    width: 450px;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 0 47px;
+    gap: 2rem;
+  }
+
+  .menu>li>a {
+    line-height: 93px;
+    display: block;
+    border-bottom: 3px solid transparent;
+  }
+
+  .menu a.active {
+    border-bottom: 3px solid #FFFFFF;
+  }
+
+  .logo {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .logo {
+    margin-left: 3rem;
+  }
+
+  .menu {
+    width: 830px;
+    padding: 0 8rem 0 4rem;
+  }
+
+  .menu a:hover:not(.active) {
+    border-bottom: 3px solid rgba(255, 255, 255, 50%);
+  }
+
+  .menu__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .menu li a {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .menu__order {
+    display: block;
+    font-weight: bold;
+    margin-right: .5rem;
+    color: #FFFFFF;
+  }
+
+  .menu__line {
+    width: 473px;
+    border-bottom: 1px solid rgba(255, 255, 255, 25%);
+    display: block;
+    z-index: 2;
+    position: relative;
+    right: -1.5rem
+  }
+
+  header {
+    margin-top: 40px;
+  }
+}
