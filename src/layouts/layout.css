@@ -16,6 +16,10 @@ header {
   display: none;
 }
 
+.menu__wrapper {
+  display: none;
+}
+
 .mobile-menu-container {
   width: 68%;
   height: 100vh;
@@ -91,6 +95,12 @@ header {
     display: none;
   }
 
+  .menu__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
   .menu {
     display: flex;
     color: #FFFFFF;
@@ -133,12 +143,6 @@ header {
 
   .menu a:hover:not(.active) {
     border-bottom: 3px solid rgba(255, 255, 255, 50%);
-  }
-
-  .menu__wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
   }
 
   .menu li a {
